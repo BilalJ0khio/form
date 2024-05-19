@@ -1,0 +1,161 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-size: 62.5%;
+  --background-navy-color: #244855;
+  --background-tomato-color: #e64833;
+  --background-brown-color: #874f41;
+  --background-steel-color: hsl(178, 16%, 62%);
+  --background-cream-color: #fbe9d0;
+  --green-color: #32de84;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #444;
+}
+[max-width] {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+fieldset {
+  padding: 2rem;
+}
+fieldset legend {
+  font-size: 3.2rem;
+}
+input:not(input[type="radio"], input[type="file"], input[type="checkbox"]) {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  background: none;
+  border: 1px solid #333;
+  outline: none;
+}
+input:focus {
+  border-color: var(--background-tomato-color);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-navy-color);
+  margin-bottom: 2rem;
+}
+
+.nav li {
+  flex: 1;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0.8em;
+}
+
+.nav li:first-of-type {
+  background-color: var(--background-steel-color);
+}
+.nav li:first-of-type a {
+  color: #222;
+}
+
+[link]:link,
+[link]:visited {
+  color: #e3e2df;
+}
+
+/* [link]:hover {
+  color: #222;
+} */
+
+label {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* second page */
+
+.cnic-container [type="text"] {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+}
+
+.green-link {
+  background-color: var(--green-color) !important;
+}
+.green-link a {
+  color: #222 !important;
+}
+
+.personal-steel-link,
+.review-steel {
+  background-color: var(--background-steel-color) !important;
+}
+.personal-steel-link a,
+.review-steel a {
+  color: #222 !important;
+}
+
+/*  */
+input[type="radio"] + label {
+  display: inline-block;
+}
+
+.radio-margin {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.text-area {
+  resize: none;
+  margin-bottom: 2rem;
+  outline: none;
+  padding: 0.5rem;
+  width: 50rem;
+  height: 10rem;
+}
+
+/*  */
+
+.thanks-main {
+  background-color: #e3e2df;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thanks-icon {
+  font-size: 20rem;
+  color: #32de84;
+}
+.thanks-main h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.thanks-main a {
+  color: #e64833;
+}
